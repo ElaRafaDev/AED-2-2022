@@ -35,8 +35,8 @@ void triangulo(unsigned int altura, int x, int y)
 {
     gfx_set_color(255, 255, 255); /*Cor branca*/
 
-    gfx_line(x / 2, y / 2 + (altura), (x / 2) - (altura / 2), y / 2);       /*Lado direito*/
-    gfx_line(x / 2, y / 2 + (altura), (x / 2) + (altura / 2), y / 2);       /*Lado esquerdo*/
+    gfx_line(x / 2, (y / 2) + altura, (x / 2) - (altura / 2), y / 2);       /*Lado direito*/
+    gfx_line(x / 2, (y / 2) + altura, (x / 2) + (altura / 2), y / 2);       /*Lado esquerdo*/
     gfx_line((x / 2) + (altura / 2), y / 2, (x / 2) - (altura / 2), y / 2); /*Base*/
 }
 
